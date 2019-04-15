@@ -1,0 +1,101 @@
+/* Name: Nunez, Priscilla */
+/* Class: SI 339 */
+/* Date: 4.10.19 */
+/* Assignment: JavaScript Canvas */
+/* Instructor: Dr. CVL  */
+/* GSI: Lee, Sanghyun  */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600);
+@import url(https://fonts.googleapis.com/css?family=Rozha+One);
+* {
+  
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin: 5px auto;
+  padding: 5px auto;
+}
+
+.book-cover {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  width: 100px;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.entry {
+  margin: 30px 1vw;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.21);
+  flex: 1 0 30%;
+  max-width: 44vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .entry {
+        flex: 1 0 40%;
+    }
+  }
+
+
+.entry:before {
+  content: attr(nyt-rank);
+  font-family: "Rozha One", serif;
+  font-size: 2rem;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 10px 10px;
+  text-align: center;
+  border: 1px solid #282c37;
+  background-color: #fff;
+  color: #282c37;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.21);
+}
+
+#best-seller-titles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px
+}
+#best-seller-titles a {
+  text-decoration: none;
+  color: blue;
+}
+#best-seller-titles h1, #best-seller-titles h2, #best-seller-titles h3, #best-seller-titles h4 {
+  color: #282c37;
+  font-size: 15px;
+}
+#best-seller-titles p {
+  color: #333030;
+}
+#best-seller-titles .publisher {
+  color: #333030;
+}
+#best-seller-titles .stats hr {
+  opacity: 0.5;
+}
+#best-seller-titles .stats p {
+  color: #282c37;
+}
+
+#masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  z-index: 9999;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0px 1px 5px 0px #777;
+  transition: 200ms;
+}
+#masthead img {
+  transition: 100ms;
+}
+
